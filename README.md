@@ -60,9 +60,10 @@ Menu **Laporan** menyediakan informasi aktivitas usaha, meliputi:
 
 ### Video demo 
 
-link video demo : https://drive.google.com/drive/folders/1SykhUMg860tLGl-MwqyzPWcrsGztsPnp?usp=drive_link
+link : https://drive.google.com/drive/folders/1SykhUMg860tLGl-MwqyzPWcrsGztsPnp?usp=drive_link
 ---
 
+---
 ### 🔹 Splash Screen
 
 <img width="350" src="https://github.com/user-attachments/assets/c4109982-2d6b-4e9e-88e1-0dc6591b43d5" />
