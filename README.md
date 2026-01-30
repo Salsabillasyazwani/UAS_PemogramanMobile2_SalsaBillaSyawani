@@ -169,7 +169,7 @@ Aplikasi **U-Manage** merupakan aplikasi manajemen UMKM yang menyediakan fitur p
 ---
 ---
 
-Video  :
+### Demo aplikasi :
 
 
 
@@ -179,10 +179,32 @@ UI aplikasi
 ---
 
 ### Splash screen
+
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/c4109982-2d6b-4e9e-88e1-0dc6591b43d5" />
 
+
 ### Login 
+
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/080a7250-0233-4e3d-92ec-6e1eec32df73" />
+
+
+### Register 
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/bb1a24ae-f6fc-42e3-9a7f-bf34c8e5f3e2" />
+
+
+### Dashboard 
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/1656fd1c-3c60-4221-85fb-6229e072cff2" />
+
+
+### Input produk 
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/5a6adb45-9ebb-4607-90c6-735f8dc38cb1" />
+
+
+
+
 
 
 
