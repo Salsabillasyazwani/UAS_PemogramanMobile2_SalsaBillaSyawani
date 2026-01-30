@@ -1,29 +1,35 @@
-# UAS Pemograman Mobile2 Salsa Billa Syazwani
+# 📱 U-Manage
 
-# U-Manage
+### Aplikasi Manajemen UMKM
 
-Aplikasi Manajemen UMKM
-
-## Deskripsi Aplikasi
-
-U-Manage adalah aplikasi manajemen Usaha Mikro, Kecil, dan Menengah (UMKM) yang dirancang untuk membantu pelaku usaha dalam mengelola produk, transaksi, stok, laporan, serta perhitungan Harga Pokok Produksi (HPP) secara terstruktur dan efisien.
-
-Aplikasi ini ditujukan untuk UMKM, khususnya di bidang makanan, minuman, dan retail, agar proses pencatatan bisnis menjadi lebih rapi, terkontrol, dan berbasis data.
+**Ujian Akhir Semester – Pemrograman Mobile 2**
+**Nama:** Salsa Billa Syazwani
 
 ---
 
-## Tujuan Aplikasi
+## 📌 Deskripsi Aplikasi
 
-* Membantu UMKM memantau omset dan penjualan secara real-time
-* Mengelola data produk dan stok secara terpusat
-* Mencatat transaksi penjualan dengan akurat
-* Menyediakan laporan bisnis yang lengkap
-* Membantu menentukan harga jual berdasarkan perhitungan HPP
+**U-Manage** merupakan aplikasi manajemen Usaha Mikro, Kecil, dan Menengah (UMKM) yang dirancang untuk membantu pelaku usaha dalam mengelola **data produk, stok, transaksi, laporan, serta perhitungan Harga Pokok Produksi (HPP)** secara terstruktur dan efisien.
+
+Aplikasi ini ditujukan bagi UMKM, khususnya pada sektor **makanan, minuman, dan retail**, dengan tujuan mendukung pencatatan aktivitas usaha agar lebih tertata, terkontrol, dan berbasis data digital.
+
 ---
 
-## Navigasi Aplikasi
+## 🎯 Tujuan Aplikasi
 
-Aplikasi memiliki lima menu utama:
+Tujuan pengembangan aplikasi **U-Manage** adalah sebagai berikut:
+
+* Membantu pelaku UMKM dalam memantau omset dan penjualan secara real-time
+* Menyediakan pengelolaan data produk dan stok secara terpusat
+* Memfasilitasi pencatatan transaksi penjualan secara akurat
+* Menyajikan laporan usaha secara sistematis dan informatif
+* Membantu penentuan harga jual melalui perhitungan Harga Pokok Produksi (HPP)
+
+---
+
+## 🧭 Navigasi Aplikasi
+
+Aplikasi **U-Manage** memiliki lima menu utama, yaitu:
 
 1. Dashboard
 2. Transaksi
@@ -31,83 +37,114 @@ Aplikasi memiliki lima menu utama:
 4. Laporan
 5. Akun
 
-   
 ---
 
-## Fitur Dashboard
+## 📊 Fitur Dashboard
 
-Halaman Dashboard menampilkan ringkasan kondisi usaha, meliputi:
+Menu **Dashboard** berfungsi sebagai halaman utama yang menampilkan ringkasan kondisi usaha secara umum, meliputi:
 
-* Omset hari ini dan bulan ini
-* Jumlah produk terjual (harian dan bulanan)
-* Produk terlaris
+* Omset harian dan bulanan
+* Jumlah produk terjual harian dan bulanan
+* Informasi produk terlaris
 * Akses cepat ke fitur input produk
-* Daftar produk
-* Fitur hitung HPP
+* Akses ke daftar produk
+* Akses ke fitur perhitungan HPP
 
-Dashboard dirancang agar pemilik usaha dapat langsung mengetahui performa bisnis secara singkat dan jelas.
+Dashboard dirancang untuk memberikan gambaran singkat mengenai performa usaha sehingga pengguna dapat mengambil keputusan bisnis dengan lebih cepat dan tepat.
 
 ---
 
-## Fitur Transaksi dan Order
+## 📦 Fitur Produk
 
-### Transaksi
+### ➕ Input Produk
 
-Digunakan untuk mencatat aktivitas pembelian pelanggan, meliputi:
+Fitur **Input Produk** digunakan untuk menambahkan data produk baru ke dalam sistem. Pengguna diwajibkan mengisi informasi produk secara lengkap, yang meliputi:
+
+* **Tanggal pembuatan (Manufacturing Date / MFG)**
+* **Nama produk**
+* **Kategori produk**
+* **Satuan produk**
+* **Harga produk**
+* **Jumlah stok produk**
+* **Tanggal kedaluwarsa (Expired Date / EXP)**
+
+Data produk yang telah diinput akan disimpan ke dalam basis data dan secara otomatis tersedia pada fitur daftar produk serta dapat digunakan dalam proses transaksi.
+
+---
+
+### 📋 Daftar Produk
+
+Fitur **Daftar Produk** menampilkan seluruh data produk yang telah tersimpan di dalam sistem. Pada menu ini, pengguna dapat:
+
+* Melihat informasi lengkap setiap produk
+* Melakukan perubahan (update) data produk
+* Menghapus data produk yang sudah tidak digunakan
+* Memantau jumlah stok produk secara langsung
+
+Fitur ini bertujuan untuk memastikan pengelolaan data produk tetap akurat dan selalu diperbarui.
+
+---
+
+## 🛒 Fitur Transaksi dan Order
+
+### 💳 Transaksi
+
+Menu **Transaksi** digunakan untuk mencatat aktivitas pembelian pelanggan, dengan informasi yang dicatat meliputi:
 
 * Produk yang dibeli
 * Jumlah produk
-* Total harga belanja
-
-### Order
-
-Setelah transaksi dicatat, pengguna dapat melanjutkan ke menu Order.
-Fitur ini menyediakan:
-
-* Metode pembayaran (saat ini tersedia pembayaran cash)
-* Proses penyimpanan transaksi
-* Pengurangan stok otomatis
-* Tampilan struk setelah transaksi berhasil
+* Total harga pembelian
 
 ---
 
-## Fitur Laporan
+### 🧾 Order
 
-Menu Laporan menyediakan beberapa jenis laporan, yaitu:
+Menu **Order** merupakan kelanjutan dari proses transaksi. Pada fitur ini, sistem menyediakan:
 
-1. Laporan Produk
+* Metode pembayaran (saat ini mendukung pembayaran secara tunai/cash)
+* Proses penyimpanan data transaksi ke dalam sistem
+* Pengurangan stok produk secara otomatis
+* Tampilan struk transaksi setelah proses berhasil
+
+---
+
+## 📑 Fitur Laporan
+
+Menu **Laporan** menyediakan berbagai jenis laporan sebagai berikut:
+
+1. **Laporan Produk**
    Menampilkan daftar produk beserta informasi harga, stok, dan status produk.
 
-2. Laporan Mutasi Produk
-   Menampilkan pergerakan produk masuk dan keluar, sehingga pengguna dapat mengetahui jumlah produk yang ditambahkan dan yang terjual.
+2. **Laporan Mutasi Produk**
+   Menampilkan pergerakan produk masuk dan keluar selama periode tertentu.
 
-3. Laporan Transaksi
-   Menampilkan daftar transaksi berdasarkan periode tertentu.
+3. **Laporan Transaksi**
+   Menampilkan data transaksi berdasarkan periode yang dipilih.
 
-4. Laporan Detail Transaksi
-   Menampilkan detail setiap transaksi, termasuk produk, jumlah, harga satuan, dan subtotal.
+4. **Laporan Detail Transaksi**
+   Menampilkan rincian setiap transaksi, termasuk produk, jumlah, harga satuan, dan subtotal.
 
-5. Laporan Rekap Produk
-   Menampilkan rekap penjualan produk berdasarkan periode harian, bulanan, dan tahunan.
+5. **Laporan Rekap Produk**
+   Menampilkan rekapitulasi penjualan produk berdasarkan periode harian, bulanan, dan tahunan.
 
-6. Laporan HPP
+6. **Laporan HPP**
    Menampilkan hasil perhitungan Harga Pokok Produksi untuk setiap produk.
 
 ---
 
-## Fitur Akun
+## 👤 Fitur Akun
 
-Menu Akun digunakan untuk pengelolaan profil dan keamanan aplikasi, meliputi:
+Menu **Akun** digunakan untuk pengelolaan profil dan keamanan aplikasi, yang meliputi:
 
-* Edit profil toko (nama toko dan nama pemilik)
-* Pengaturan keamanan akun (username dan password)
-* Logout akun
+* Pengubahan data profil toko (nama toko dan nama pemilik)
+* Pengaturan username dan password
+* Proses logout dari aplikasi
 
 ---
 
-## Fitur Hitung HPP (Harga Pokok Produksi)
+## 🧮 Fitur Hitung HPP (Harga Pokok Produksi)
 
-Fitur ini digunakan untuk menghitung biaya produksi dan menentukan harga jual produk.
+Fitur **Hitung HPP** digunakan untuk menghitung total biaya produksi dan menentukan harga jual produk secara sistematis.
 
 ### Data Produk
 
@@ -116,58 +153,51 @@ Fitur ini digunakan untuk menghitung biaya produksi dan menentukan harga jual pr
 
 ### Biaya Variabel (Bahan Baku)
 
-Pengguna dapat menambahkan bahan baku dengan mengisi:
-
-* Nama item
-* Harga
-
-Data bahan baku dapat ditambahkan lebih dari satu item.
+* Nama bahan baku
+* Harga bahan baku
+  (Data dapat ditambahkan lebih dari satu item)
 
 ### Biaya Tetap (Tenaga Kerja)
 
-Pengguna dapat menambahkan biaya tenaga kerja dengan mengisi:
-
-* Nama item
+* Nama biaya
 * Harga
 * Satuan biaya (per bulan, hari, jam, atau porsi)
 
 ### Biaya Overhead
 
-Digunakan untuk mencatat biaya pendukung produksi, seperti listrik, gas, atau air, dengan data:
-
-* Nama item
+* Nama biaya
 * Harga satuan
 * Periode biaya (bulan, hari, jam, atau porsi)
 
 ### Biaya Tak Terduga
 
-* Pilihan aktif atau tidak
-* Jika aktif, pengguna mengisi persentase biaya tak terduga
+* Opsi aktif atau tidak aktif
+* Persentase biaya tak terduga jika diaktifkan
 
 ### Pajak
 
-* Input persentase pajak yang berlaku
+* Persentase pajak yang berlaku
 
 ### Margin Laba
 
-* Margin dapat ditentukan dalam bentuk persentase atau nominal rupiah
+* Margin laba dalam bentuk persentase atau nominal rupiah
 
 ---
 
-## Hasil Perhitungan HPP
+## 📈 Hasil Perhitungan HPP
 
-Setelah menekan tombol Hitung HPP, sistem akan menampilkan:
+Setelah pengguna menekan tombol **Hitung HPP**, sistem akan menampilkan hasil perhitungan berupa:
 
-* Total HPP
-* HPP per unit
+* Total Harga Pokok Produksi
+* HPP per unit produk
 * Harga jual per unit
-* Harga jual termasuk pajak
+* Harga jual setelah pajak
 * Laba per produk
 
 ---
 
-## Kesimpulan
+## ✅ Kesimpulan
 
-U-Manage adalah aplikasi manajemen UMKM yang menyediakan fitur lengkap untuk pengelolaan produk, transaksi, laporan, dan perhitungan HPP. Aplikasi ini membantu pelaku usaha dalam mengambil keputusan bisnis yang lebih tepat berdasarkan data yang akurat dan terstruktur.
+Aplikasi **U-Manage** merupakan solusi manajemen UMKM yang menyediakan fitur lengkap untuk pengelolaan produk, stok, transaksi, laporan, serta perhitungan Harga Pokok Produksi (HPP). Dengan adanya aplikasi ini, pelaku UMKM diharapkan dapat mengelola usaha secara lebih profesional, sistematis, dan berbasis data.
 
 ---
