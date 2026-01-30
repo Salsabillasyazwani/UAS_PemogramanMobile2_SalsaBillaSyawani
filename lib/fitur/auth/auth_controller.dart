@@ -36,7 +36,6 @@ class AuthController extends GetxController {
     return regex.hasMatch(password);
   }
 
-  // --- REGISTER MANUAL ---
   Future<void> signUp() async {
     if (nameController.text.isEmpty ||
         emailController.text.isEmpty ||
@@ -56,13 +55,6 @@ class AuthController extends GetxController {
       return;
     }
 
-    final confirmed = await _showConfirmationDialog(
-      title: 'Konfirmasi',
-      message: 'Apakah Anda yakin ingin mendaftar?',
-    );
-
-    if (confirmed != true) return;
-
     isLoading.value = true;
     try {
       final userModel = UserModel(
@@ -72,32 +64,32 @@ class AuthController extends GetxController {
         email: emailController.text,
         phone: phoneController.text,
       );
+
       final response = await authService.signUpWithEmail(
         userModel,
         passwordController.text,
       );
-      if (response.user != null) {
-        final String uid = response.user!.id;
 
-        await _supabase.from('profiles').upsert({
-          'id': uid,
-          'name': nameController.text,
-          'username': emailController.text.split('@')[0],
-          'email': emailController.text,
-          'phone_number': phoneController.text,
-        });
+      final user = response.user;
+      if (user == null) return;
 
-        _showSuccessSnackbar('Akun berhasil dibuat!');
-        Get.offAllNamed(AppRoutes.dashboard);
-      }
+      await _supabase.from('profiles').upsert({
+        'id': user.id,
+        'name': userModel.name,
+        'username': userModel.username,
+        'email': userModel.email,
+        'phone_number': userModel.phone,
+      });
+
+      _showSuccessSnackbar('Akun berhasil dibuat!');
+      Get.offAllNamed(AppRoutes.dashboard);
     } catch (e) {
-      _showErrorSnackbar('Pendaftaran Gagal: ${e.toString()}');
+      _showErrorSnackbar('Pendaftaran Gagal: $e');
     } finally {
       isLoading.value = false;
     }
   }
 
-  // --- SIGN IN MANUAL ---
   Future<void> signIn() async {
     if (emailController.text.isEmpty || passwordController.text.isEmpty) {
       _showErrorSnackbar('Email dan Password wajib diisi');
@@ -110,78 +102,44 @@ class AuthController extends GetxController {
         emailController.text,
         passwordController.text,
       );
-      _showSuccessSnackbar('Selamat Datang Kembali!');
+
       Get.offAllNamed(AppRoutes.dashboard);
+      _showSuccessSnackbar('Selamat Datang Kembali!');
     } catch (e) {
-      _showErrorSnackbar('Login Gagal: Email atau Password salah');
+      _showErrorSnackbar('Login Gagal');
     } finally {
       isLoading.value = false;
     }
   }
 
-  // --- LOGIN & DAFTAR GOOGLE ---
   Future<void> signInWithGoogle() async {
     isLoading.value = true;
     try {
-      final result = await authService.signInWithGoogle();
+      await authService.signInWithGoogle();
 
-      if (result != null && result.user != null) {
-        await _supabase.from('profiles').upsert({
-          'id': result.user!.id,
-          'name': result.user!.userMetadata?['full_name'] ?? 'User Google',
-          'email': result.user!.email,
-          'username': result.user!.email!.split('@')[0],
-        });
+      final user = _supabase.auth.currentUser;
+      if (user == null) return;
 
-        _showSuccessSnackbar('Berhasil masuk dengan Google');
-        Get.offAllNamed(AppRoutes.dashboard);
-      }
+      await _supabase.from('profiles').upsert({
+        'id': user.id,
+        'name': user.userMetadata?['full_name'] ?? 'User Google',
+        'email': user.email,
+        'username': user.email!.split('@')[0],
+      });
+
+      _showSuccessSnackbar('Berhasil masuk dengan Google');
+      Get.offAllNamed(AppRoutes.dashboard);
     } catch (e) {
-      _showErrorSnackbar('Google Sign-In Gagal: ${e.toString()}');
+      _showErrorSnackbar('Google Sign-In Gagal: $e');
     } finally {
       isLoading.value = false;
     }
   }
 
-  // --- LOGOUT ---
   Future<void> signOut() async {
-    try {
-      await authService.signOut();
-      clearFields();
-      Get.deleteAll(force: true);
-
-      Get.offAllNamed(AppRoutes.login);
-    } catch (e) {
-      _showErrorSnackbar('Gagal Logout');
-    }
-  }
-
-  // --- HELPER UI (Tetap Sesuai Logika Kamu) ---
-  Future<bool?> _showConfirmationDialog({
-    required String title,
-    required String message,
-  }) async {
-    return await Get.dialog<bool>(
-      AlertDialog(
-        title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
-        content: Text(message),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        actions: [
-          TextButton(
-            onPressed: () => Get.back(result: false),
-            child: const Text('Batal'),
-          ),
-          ElevatedButton(
-            onPressed: () => Get.back(result: true),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF6B1515),
-              foregroundColor: Colors.white,
-            ),
-            child: const Text('Ya, Lanjut'),
-          ),
-        ],
-      ),
-    );
+    await authService.signOut();
+    clearFields();
+    Get.offAllNamed(AppRoutes.login);
   }
 
   void _showErrorSnackbar(String message) {
@@ -197,7 +155,7 @@ class AuthController extends GetxController {
     Get.snackbar(
       'Berhasil',
       message,
-      backgroundColor: const Color.fromARGB(255, 54, 224, 60),
+      backgroundColor: Colors.green,
       colorText: Colors.white,
     );
   }
@@ -205,6 +163,7 @@ class AuthController extends GetxController {
   @override
   void onClose() {
     nameController.dispose();
+    usernameController.dispose();
     emailController.dispose();
     phoneController.dispose();
     passwordController.dispose();
