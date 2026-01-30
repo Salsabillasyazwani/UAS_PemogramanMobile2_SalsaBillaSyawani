@@ -1,4 +1,4 @@
-#  U-Manage
+# U-Manage
 
 ### Aplikasi Manajemen UMKM
 
@@ -9,17 +9,17 @@
 
 ## 📌 Deskripsi Aplikasi
 
-**U-Manage** merupakan aplikasi manajemen Usaha Mikro, Kecil, dan Menengah (UMKM) yang dirancang untuk membantu pelaku usaha dalam mengelola **produk, stok, transaksi, laporan, serta perhitungan Harga Pokok Produksi (HPP)** secara terstruktur dan efisien.
+**U-Manage** merupakan aplikasi manajemen Usaha Mikro, Kecil, dan Menengah (UMKM) yang dirancang untuk membantu pelaku usaha dalam mengelola **produk, stok, transaksi penjualan, laporan, serta perhitungan Harga Pokok Produksi (HPP)** secara terstruktur dan efisien.
 
-Aplikasi ini ditujukan bagi UMKM, khususnya pada sektor **makanan, minuman, dan retail**, guna mendukung pencatatan usaha agar lebih rapi, terkontrol, dan berbasis data digital.
+Aplikasi ini ditujukan bagi UMKM, khususnya pada sektor **makanan, minuman, dan retail**, agar proses pencatatan usaha dapat dilakukan secara lebih rapi, terkontrol, dan berbasis data digital.
 
 ---
 
 ## 🎯 Tujuan Aplikasi
 
-Tujuan dari pengembangan aplikasi **U-Manage** adalah:
+Tujuan pengembangan aplikasi **U-Manage** adalah sebagai berikut:
 
-* Membantu pelaku UMKM memantau omset dan penjualan
+* Membantu pelaku UMKM dalam memantau omset dan penjualan
 * Memudahkan pengelolaan data produk dan stok
 * Mencatat transaksi penjualan secara akurat
 * Menyediakan laporan usaha yang terstruktur
@@ -40,7 +40,7 @@ Aplikasi **U-Manage** memiliki **empat menu utama**, yaitu:
 
 ## 📊 Fitur Dashboard
 
-Menu **Dashboard** berfungsi sebagai halaman utama yang menampilkan ringkasan kondisi usaha, meliputi:
+Menu **Dashboard** menampilkan ringkasan kondisi usaha, meliputi:
 
 * Omset harian dan bulanan
 * Jumlah produk terjual
@@ -49,7 +49,7 @@ Menu **Dashboard** berfungsi sebagai halaman utama yang menampilkan ringkasan ko
 * Akses ke daftar produk
 * Akses ke fitur perhitungan Harga Pokok Produksi (HPP)
 
-Dashboard dirancang untuk memberikan gambaran singkat mengenai performa usaha secara menyeluruh.
+Dashboard berfungsi sebagai pusat informasi utama bagi pemilik usaha.
 
 ---
 
@@ -57,23 +57,23 @@ Dashboard dirancang untuk memberikan gambaran singkat mengenai performa usaha se
 
 ### ➕ Input Produk
 
-Fitur **Input Produk** digunakan untuk menambahkan data produk ke dalam sistem. Data yang diinput meliputi:
+Fitur **Input Produk** digunakan untuk menambahkan data produk ke dalam sistem dengan informasi sebagai berikut:
 
 * Tanggal pembuatan produk (MFG)
 * Nama produk
 * Kategori produk
 * Satuan produk
 * Harga produk
-* Jumlah stok
+* Jumlah stok produk
 * Tanggal kedaluwarsa (EXP)
 
-Setelah proses input selesai, data produk akan tersimpan dan dapat digunakan dalam transaksi serta laporan.
+Data produk yang telah diinput akan tersimpan ke dalam sistem dan dapat digunakan pada proses transaksi serta laporan.
 
 ---
 
 ### 📋 Daftar Produk
 
-Fitur **Daftar Produk** menampilkan seluruh produk yang telah tersimpan dalam sistem. Melalui fitur ini, pengguna dapat:
+Fitur **Daftar Produk** menampilkan seluruh produk yang tersimpan dalam sistem. Pada fitur ini, pengguna dapat:
 
 * Melihat data produk secara lengkap
 * Melakukan pembaruan (update) data produk
@@ -84,12 +84,26 @@ Fitur **Daftar Produk** menampilkan seluruh produk yang telah tersimpan dalam si
 
 ## 🛒 Fitur Transaksi
 
-Menu **Transaksi** digunakan untuk mencatat aktivitas pembelian pelanggan, yang meliputi:
+Menu **Transaksi** digunakan untuk mencatat proses penjualan kepada pelanggan. Fitur ini mencakup:
 
-* Pemilihan produk
-* Jumlah produk yang dibeli
+* Pemilihan produk yang dibeli
+* Penentuan jumlah produk
 * Perhitungan total harga secara otomatis
-* Pengurangan stok produk setelah transaksi
+* Proses **order/pemesanan**
+* Pemilihan metode pembayaran (cash)
+* Penyimpanan data transaksi
+* Pengurangan stok produk secara otomatis
+
+### 🧾 Struk Transaksi
+
+Setelah proses transaksi dan pembayaran berhasil, sistem akan menampilkan **struk transaksi** yang berisi:
+
+* Tanggal dan waktu transaksi
+* Daftar produk yang dibeli
+* Jumlah dan harga satuan produk
+* Total pembayaran
+
+Struk ini berfungsi sebagai bukti transaksi bagi pelanggan dan pelaku usaha.
 
 ---
 
@@ -104,7 +118,7 @@ Menu **Laporan** menyediakan informasi terkait aktivitas usaha, antara lain:
    Menampilkan daftar transaksi berdasarkan periode tertentu.
 
 3. **Laporan Detail Transaksi**
-   Menampilkan rincian transaksi secara lengkap.
+   Menampilkan rincian setiap transaksi secara lengkap.
 
 4. **Laporan HPP**
    Menampilkan hasil perhitungan Harga Pokok Produksi setiap produk.
@@ -117,17 +131,14 @@ Menu **Akun** digunakan untuk pengelolaan data pengguna dan keamanan aplikasi, m
 
 * Pengubahan profil toko
 * Pengaturan username dan password
-* Logout dari aplikasi
+* Proses logout akun
 
 ---
 
 ## 🧮 Fitur Hitung HPP (Harga Pokok Produksi)
 
-Fitur **Hitung HPP** digunakan untuk menghitung biaya produksi dan menentukan harga jual produk.
+Fitur **Hitung HPP** digunakan untuk menghitung biaya produksi dan menentukan harga jual produk berdasarkan:
 
-Data yang digunakan dalam perhitungan meliputi:
-
-* Data produk dan jumlah produksi
 * Biaya bahan baku
 * Biaya tenaga kerja
 * Biaya overhead
@@ -139,7 +150,7 @@ Data yang digunakan dalam perhitungan meliputi:
 
 ## 📈 Hasil Perhitungan HPP
 
-Sistem akan menampilkan hasil berupa:
+Sistem akan menampilkan hasil perhitungan berupa:
 
 * Total Harga Pokok Produksi
 * HPP per unit
@@ -151,6 +162,6 @@ Sistem akan menampilkan hasil berupa:
 
 ## ✅ Kesimpulan
 
-Aplikasi **U-Manage** merupakan aplikasi manajemen UMKM yang menyediakan fitur pengelolaan produk, transaksi, laporan, serta perhitungan HPP dalam satu sistem terintegrasi. Aplikasi ini diharapkan dapat membantu pelaku UMKM dalam mengelola usaha secara lebih efektif, sistematis, dan profesional.
+Aplikasi **U-Manage** merupakan aplikasi manajemen UMKM yang menyediakan fitur pengelolaan produk, transaksi penjualan beserta struk, laporan, serta perhitungan Harga Pokok Produksi (HPP) dalam satu sistem terintegrasi. Aplikasi ini diharapkan mampu membantu pelaku UMKM dalam mengelola usaha secara lebih efektif, sistematis, dan profesional.
 
 ---
