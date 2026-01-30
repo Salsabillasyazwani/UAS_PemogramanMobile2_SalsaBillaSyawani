@@ -172,35 +172,70 @@ Aplikasi **U-Manage** merupakan aplikasi manajemen UMKM yang menyediakan fitur p
 ### Demo aplikasi :
 
 
-
----
 ---
 UI aplikasi 
+
 ---
 
 ### Splash screen
 
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/c4109982-2d6b-4e9e-88e1-0dc6591b43d5" />
-
+---
 
 ### Login 
 
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/080a7250-0233-4e3d-92ec-6e1eec32df73" />
+---
 
 
 ### Register 
 
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/bb1a24ae-f6fc-42e3-9a7f-bf34c8e5f3e2" />
+--
 
 
 ### Dashboard 
 
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/1656fd1c-3c60-4221-85fb-6229e072cff2" />
+---
 
 
 ### Input produk 
 
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/5a6adb45-9ebb-4607-90c6-735f8dc38cb1" />
+---
+
+### Daftar produk
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/3b55ee57-13d6-4641-a16c-54d32183c8b4" />
+---
+
+### Hitung HPP
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/8c25f6c8-d84a-451b-8224-c4b27183bff9" />
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/28a7f835-9100-49f1-adc8-f061bf99b568" />
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/c510bb0b-b8b2-4d8e-97e7-46e594ff0ccb" />
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/cf532f5a-b9bf-48c1-a11f-ebb4c82dc775" />
+---
+
+### Transaksi 
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/accb65f2-28b4-418b-9c79-42e543de740c" />
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/1bcbec5c-561b-4118-9160-3c60ea8d0e8b" />
+
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/fb1248c4-5cc4-4f80-b97b-0b09276f0afa" />
+---
+
+
+
+
+
+
+
+
+
 
 
 
