@@ -165,4 +165,4 @@ Sistem akan menampilkan hasil perhitungan berupa:
 Aplikasi **U-Manage** merupakan aplikasi manajemen UMKM yang menyediakan fitur pengelolaan produk, transaksi penjualan beserta struk, laporan, serta perhitungan Harga Pokok Produksi (HPP) dalam satu sistem terintegrasi. Aplikasi ini diharapkan mampu membantu pelaku UMKM dalam mengelola usaha secara lebih efektif, sistematis, dan profesional.
 
 ---
->>>>>>> bebc3dce87f55486f45a5f6bc7c43ce6207bb467
+
