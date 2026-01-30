@@ -1,4 +1,5 @@
 ### Link aplikasi :
+https://fanciful-strudel-a18502.netlify.app
 
 ---
 
