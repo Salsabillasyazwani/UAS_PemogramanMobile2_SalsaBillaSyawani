@@ -54,12 +54,12 @@ Menu **Laporan** menyediakan informasi aktivitas usaha, meliputi:
 4. **Riwayat HPP**
    Menampilkan hasil perhitungan Harga Pokok Produksi.
 
-> ✅ **Catatan:**
-> Aplikasi ini **tidak menggunakan laporan detail transaksi**.
-
 ---
 
 ## 🖼️ Demo & Tampilan Aplikasi
+
+----
+### Video demo
 
 ### 🔹 Splash Screen
 
@@ -97,9 +97,8 @@ Menu **Laporan** menyediakan informasi aktivitas usaha, meliputi:
   <img width="250" src="https://github.com/user-attachments/assets/8c25f6c8-d84a-451b-8224-c4b27183bff9" />
   <img width="250" src="https://github.com/user-attachments/assets/28a7f835-9100-49f1-adc8-f061bf99b568" />
   <img width="250" src="https://github.com/user-attachments/assets/c510bb0b-b8b2-4d8e-97e7-46e594ff0ccb" />
-</p>
-
 <img width="350" src="https://github.com/user-attachments/assets/cf532f5a-b9bf-48c1-a11f-ebb4c82dc775" />
+</p>
 
 ---
 
@@ -119,9 +118,8 @@ Menu **Laporan** menyediakan informasi aktivitas usaha, meliputi:
   <img width="250" src="https://github.com/user-attachments/assets/596ee9c6-f1ae-4b9f-add8-ae1df3855cc1" />
   <img width="250" src="https://github.com/user-attachments/assets/9e72106a-2b2e-4f1c-a86b-d462440bb966" />
   <img width="250" src="https://github.com/user-attachments/assets/e51d94b5-c82f-4b0b-8e60-120a2c73dbe6" />
-</p>
-
 <img width="350" src="https://github.com/user-attachments/assets/28ba873a-b51e-44d8-bd67-584a2e5e3591" />
+</p>
 
 ---
 
@@ -131,9 +129,8 @@ Menu **Laporan** menyediakan informasi aktivitas usaha, meliputi:
   <img width="250" src="https://github.com/user-attachments/assets/c7c6e750-c4bd-4ed8-8479-119ea2f56819" />
   <img width="250" src="https://github.com/user-attachments/assets/d65497c4-84d3-4ec0-984d-b905f4715394" />
   <img width="250" src="https://github.com/user-attachments/assets/e04fbd40-6195-465c-bbdc-0898c557452c" />
-</p>
-
 <img width="350" src="https://github.com/user-attachments/assets/6aaebaee-2c26-4f7b-b69f-a63a8c2b0f2b" />
+</p>
 
 ---
 
